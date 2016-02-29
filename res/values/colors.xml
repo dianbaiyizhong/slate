@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="popup_main_background">#b0000000</color>
+    <color name="black">#000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+    <color name="no_color">#00000000</color>
+    <color name="lavenderblush">#FFF0F5</color> <!-- 淡紫红 -->
+    <color name="grey">#808080</color> <!-- 灰色 -->
+    <color name="sb_selector_color">#171918</color> <!-- 灰色 -->
+    <color name="white1">#acb3bf</color> 
+    <color name="baidu">#354356</color> 
+    
+</resources>

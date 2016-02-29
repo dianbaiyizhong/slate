@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/baidu" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="finish"
+            android:src="@drawable/actionbar_return" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_map_pos"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext_1"
+                android:enabled="false"
+                android:paddingLeft="10dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_searchkey"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext_1"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_map_lal"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext_1"
+                android:enabled="false"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/et_map_long"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext_1"
+                android:enabled="false"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:background="@drawable/button_style"
+            android:onClick="searchButtonProcess"
+            android:padding="10dip"
+            android:text="@string/layout_map_text_3" />
+
+        <Button
+            android:id="@+id/map_next_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:background="@drawable/button_style"
+            android:onClick="goToNextPage"
+            android:padding="10dip"
+            android:text="@string/layout_map_text_2" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll2"
+        class="com.baidu.mapapi.map.SupportMapFragment" />
+
+    <Button
+        android:id="@+id/btn_pos_selected"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_style"
+        android:text="@string/layout_map_text_1" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string-array name="is_available">
+        <item>可用</item>
+        <item>不可用</item>
+        <item>保</item>
+    </string-array>
+
+</resources>
